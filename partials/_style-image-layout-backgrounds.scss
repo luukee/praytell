@@ -1,4 +1,8 @@
 .sqs-block-image {
+
+    &:not(:nth-child(1)) {
+        margin-top: -30px;
+    }
     .design-layout-collage {
     
         &.image-position-left {
