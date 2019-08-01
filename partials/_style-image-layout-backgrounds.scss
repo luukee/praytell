@@ -3,6 +3,9 @@
     &:not(:nth-child(1)) {
         margin-top: -40px;
     }
+    // 
+    // collage layout
+    // 
     .design-layout-collage {
     
         &.image-position-left {
@@ -21,7 +24,7 @@
                 background-position: center;
             }
         }
-    }
+    } // end collage layout
 
     .design-layout-card {
 
