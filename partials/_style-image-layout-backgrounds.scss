@@ -1,6 +1,6 @@
 .sqs-block-image {
 
-    &:not(:first-of-type) {
+    &.image-block:not(:first-of-type) {
         margin-top: -40px;
     }
     // 
