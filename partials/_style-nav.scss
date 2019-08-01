@@ -6,6 +6,15 @@
     z-index: 999999;
 }
 
+// header top border 
+header.Header--top .Header-inner--top {
+    background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-header-borderpray-tell-header-border.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 100%;
+}
+
 body {
     &.homepage {
         .Header-nav.Header-nav--secondary,
