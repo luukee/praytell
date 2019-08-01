@@ -9,7 +9,10 @@
         mobileHeaderElement.setAttribute("href", "/wine-home");
     }
 
-
+var wine = document.getElementsByClassName("#wine .sqs-row>.span3:first-of-type");
+if (!wine) {
+    wine.setAttribute("onclick", "openLightbox();");
+}
     // move lightbox button to the .homepage lightbox
     const div1 = document.getElementById("container-ligtbox-register-btn");
     const div2 = document.getElementById("lightbox-register-button");
