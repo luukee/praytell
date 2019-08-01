@@ -1,0 +1,49 @@
+.tweak-product-item-details-add-to-cart-button-style-outline .ProductItem-details .sqs-add-to-cart-button {
+    border: 0;
+    padding: 0;
+
+    &:hover {
+        background: transparent;
+    }
+}
+
+body {
+    .sqs-system-button.sqs-editable-button,
+    #lightbox-register-button .lightbox-handle,
+    .sqs-add-to-cart-button-inner,
+    &:not(.button-style-default).button-style-outline .sqs-editable-button {
+        padding: 0;
+        font-size: 18px;
+        background-color: transparent;
+        border: 0;
+        color: #5a6657;
+        border-top: none;
+                border-right: none;
+        border-bottom: 1px solid #5a6657;
+                                border-left: none;
+
+        text-decoration: none;
+
+        &:hover {
+            background-color: transparent;
+            color: #3f473d;
+            border-bottom: 1px solid #3f473d;
+        }
+    }
+}
+
+
+
+.modal-content #lightbox-register-button {
+    background-color: transparent;
+}
+
+// quickview button
+.sqs-product-quick-view-button-wrapper {
+     position: relative;
+    .sqs-product-quick-view-button {
+        opacity: 1 !important;
+        text-align: right;
+        color: #5a6657;
+    }
+}

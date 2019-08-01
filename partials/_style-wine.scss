@@ -1,0 +1,110 @@
+// new squarespace products landing products
+
+
+#wine,
+#wine-purchase {
+    .row {
+        .sqs-col-3 {
+            .image-container {
+                img {
+                    display: none;
+                }
+            }
+            .image-block-outer-wrapper {
+                .image-caption  p {
+                    text-align: right;
+                    line-height: 10em;
+                    font-size: 18px;
+                }
+            }
+            .sqs-product-quick-view-button-wrapper {
+                padding: 0 3em;
+                justify-content: flex-end;
+
+                .sqs-add-to-cart-button-wrapper {
+                    display: none;
+                }
+            }
+    
+            .image-caption {
+                    padding: 0 48px;
+            }
+            .more-info {
+                padding: 0 3em;
+                cursor: pointer;
+            }
+
+            .code-block + .form-block {
+                    padding: 12px 0;
+
+            }
+        }
+        .sqs-col-3:not(:first-of-type) {
+            .sqs-product-quick-view-button-wrapper {
+                visibility: hidden;
+            }
+            .image-container {
+                a {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+
+    .productDetails {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+
+// quick view
+.sqs-product-quick-view-content {
+    & * {
+        font-family: Abel;
+    }
+}
+// #featured-wine {
+
+//     .row {
+//         >.span-12 > .markdown-block {
+//             padding: 0;
+//         }
+
+//         .row {
+//             .markdown-block {
+//                 .coming-soon {
+//                     float: right;
+//                 }
+//             }
+//         }
+//     }
+
+//     .sqs-col-3 .sqs-block-html {
+//         padding-right: 43px;
+//     }
+
+//     .lightbox-handle.sqs-system-button {
+//         border: none;
+//         font-size: 18px;
+//         padding: 0;
+//         border-bottom: 1px solid black;
+//         padding-bottom: 5px;
+
+//         &:hover {
+//             background-color: transparent;
+//             color: black;
+//             border-bottom: 2px solid black;
+//         }
+//     }
+
+//     .ecwid-Product-85415372 {
+//         // gamay oblong shape
+//         background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-gamay-shape.svg");
+//         background-position: 21% 27%;
+//         background-repeat: no-repeat;
+//         background-size: 75%;
+//     }
+// }

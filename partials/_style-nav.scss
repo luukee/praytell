@@ -1,0 +1,63 @@
+.enable-load-effects .Site.loaded .Header [data-nc-container] {
+    z-index: 9;
+}
+
+.Mobile-overlay {
+    z-index: 999999;
+}
+
+body {
+    &.homepage {
+        .Header-nav.Header-nav--secondary,
+        .Mobile-overlay-nav--secondary,
+        .sqs-template-integrated-shopping-cart {
+            display: none;
+        }
+    }
+    &:not(.homepage) {
+        .Header-nav.Header-nav--primary,
+        .Mobile-overlay-nav--primary {
+            display: none;
+        }
+        .Header-nav.Header-nav--secondary,
+        .Mobile-overlay-nav--secondary {
+            display: block;
+        }
+    }
+}
+
+
+.cart-icon {
+    bottom: 60px;
+    position: fixed;
+    right: 30px;
+    z-index: 1490;
+}
+
+
+footer.Footer {
+    background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-footer-borderpray-tell-footer-border.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .Footer-blocks.Footer-blocks--bottom {
+        width: 100%;
+        > .row {
+            display: flex;
+            align-items: center;
+        }
+        @media only screen and (max-width: 640px) {
+            .sqs-layout [class*=sqs-col] {
+                width: 100% !important;
+            }
+        }
+
+    }
+    .tweak-footer-layout-columns .Footer-inner {
+        padding: 0;
+    }
+    .sqs-col-10 .sqs-block {
+        padding: 0;
+    }
+}

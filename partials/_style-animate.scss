@@ -1,0 +1,26 @@
+@keyframes filter-animation {
+    0% {
+        filter: opacity(0);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        filter: opacity(100%);
+        transform: translateY(0px);
+    }
+
+}
+
+
+@-webkit-keyframes filter-animation {
+    0% {
+        -webkit-filter: opacity(0);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-filter: opacity(100%);
+        transform: translateY(0px);
+    }
+
+}

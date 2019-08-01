@@ -1,0 +1,57 @@
+#landing,
+#wine-landing {
+	// shape orange amoeba
+	.Index-page-content {
+		background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-orange-shape.svg");
+		background-position: 21% 72%;
+		background-repeat: no-repeat;
+
+		@media only screen and (max-width: 640px) {
+			background-size: 113%;
+			background-position: 35% 13%;
+		}
+	}
+
+	.row {
+		.sqs-col-4 {
+			background-position: 92% top;
+		}
+
+		.sqs-col-7 {
+			position: relative;
+
+			.code-block {
+				position: absolute;
+				background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-green-squigglepray-tell-green-squiggle.svg"),
+					url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-green-half-circle.svg");
+				background-position: left top, 42vw bottom;
+				background-repeat: no-repeat;
+				background-size: 23vw, 13vw;
+				top: -1.4em;
+				width: 100%;
+				padding: 3em;
+
+				left: 0;
+				height: 100%;
+				z-index: 9999;
+				animation: filter-animation 1.5s;
+				-webkit-animation: filter-animation 1.5s;
+
+				@media only screen and (max-width: 640px) {
+					background-size: 46vw, 17vw;
+					top: -0.4em;
+					width: 97vw;
+					left: 40vw;
+				}
+			}
+		}
+
+		.sqs-col-12 > {
+			.sqs-block-spacer {
+				@media only screen and (max-width: 640px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
