@@ -15,6 +15,84 @@
         background-repeat: no-repeat;
     }
 
+ .image-block {
+        .image-card-wrapper {
+
+            & * {
+                text-align: justify;
+            }
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+                margin-top: calc(9% - 10%);
+            }
+        }
+    }
+
+    .image-block:nth-of-type(2) {
+        margin-bottom: -70px;
+        
+        .image-block-outer-wrapper::before {
+            content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+            left: 341px;
+
+            @media only screen and (max-width: 640px) {
+                padding-left: 0;
+
+            }
+        }
+    }
+
+    // // everything but the first image block
+    // .image-block:not(:nth-of-type(2)) {
+
+    //     // 
+    //     // collage layout
+    //     // 
+    //     .design-layout-collage {
+        
+    //         &.image-position-left {
+    //             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/jess-background-img-1.svg");
+    //             background-position: left center;
+    //             background-repeat: no-repeat;
+    //         }
+
+    //         &.image-position-right {
+    //             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/tom-background-1.svg");
+    //             background-repeat: no-repeat;
+    //             background-position: 27% center;
+
+    //             @media only screen and (max-width: 640px) {
+    //                 background-size: 82%;
+    //                 background-position: center;
+    //             }
+    //         }
+    //     } // end collage layout
+
+    //     .design-layout-card {
+
+    //         &.image-position-left {
+    //             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/tom-background-1.svg");
+    //             background-position: center;
+    //             background-repeat: no-repeat;
+    //         }
+
+    //         &.image-position-right {
+    //             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/jess-background-img-1.svg");
+    //             background-repeat: no-repeat;
+    //             background-position: center;
+
+    //             @media only screen and (max-width: 640px) {
+    //                 background-size: 82%;
+    //                 background-position: center;
+    //             }
+    //         }
+    //     }
+    }
+
     .row {
 
         .image-block:nth-of-type(2) {
@@ -35,39 +113,6 @@
             }
         } //end .image-block:nth-of-type(2)
 
-        .image-block:nth-of-type(3) {
-            .intrinsic {
-
-                // .image-inset {
-                //     left: 0;
-                //     width: 70%;
-
-                // }
-
-                // @media only screen and (max-width: 640px) {
-                //     padding-left: 0;
-
-                //     .image-card-wrapper {
-                //         width: 100%;
-                //         margin-top: calc(9% - 10%);
-                //     }
-                // }
-            } // END .intrinsic
-
-            .image-card-wrapper {
-
-                @media only screen and (max-width: 640px) {
-                    width: 100%;
-                    margin-top: calc(9% - 10%);
-                }
-
-                            .image-card .image-subtitle p {
-                text-align: justify;
-            }
-            }
-        } // END .image-block:nth-of-type(3)
-
-
 
         .image-block {
             @media only screen and (max-width: 640px) {
@@ -81,15 +126,5 @@
         position: relative;
         overflow: visible;
 
-        .embed-block[data-block-json*="tom"] {
-            // position: absolute;
-            // width: 100%;
-            // height: 100%;
-            // left: 0;
-            // top: 0;
-            // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/tom-background-1.svg");
-            // background-position: center;
-            // background-repeat: no-repeat;
-        }
     }
 }
