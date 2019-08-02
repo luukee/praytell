@@ -4,19 +4,20 @@
     .image-block:nth-of-type(2) {
         background: red;
         
-        .image-block-outer-wrapper {
-            padding-left: 5rem;
-            background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 9rem;
-
+        .image-block-outer-wrapper::before {
+            // padding-left: 5rem;
+            // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
+            // background-position: left top;
+            // background-repeat: no-repeat;
+            // padding-top: 9rem;
+            content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            
             @media only screen and (max-width: 640px) {
                 padding-left: 0;
 
-            }
-            .image-subtitle p {
-                text-align: justify;
             }
         }
     }
