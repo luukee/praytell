@@ -25,7 +25,14 @@
     .row {
 
         .image-block:nth-of-type(2) {
+                background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/about-landing.svg");
+                background-position: left 6vh;
+                background-repeat: no-repeat;
+                padding-left: 20px;
 
+                @media only screen and (max-width: 640px) {
+                    padding-left: 0;
+                }
             .intrinsic {
                 padding-top: 6rem;
                 @media only screen and (max-width: 640px) {
@@ -49,16 +56,7 @@
                 }
             }
 
-            .image-block-outer-wrapper:not(.design-layout-collage) {
-                background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/about-landing.svg");
-                background-position: left 6vh;
-                background-repeat: no-repeat;
-                padding-left: 20px;
 
-                @media only screen and (max-width: 640px) {
-                    padding-left: 0;
-                }
-            }
 
         } //end .image-block:nth-of-type(2)
 
