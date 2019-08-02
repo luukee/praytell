@@ -4,8 +4,8 @@
 	.Index-page-content {
 		background: 
 			url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-orange-shape.svg) 
-			top left
 			no-repeat;
+		background-position: 20% left;
 
 		@media only screen and (max-width: 640px) {
 			background-size: 113%;
