@@ -45,6 +45,22 @@
         @media only screen and (max-width: 640px) {
             padding-left: 0;
         }
+
+        // left and right image breakups
+        .design-layout-collage {
+        
+            &.image-position-left {
+                .image-card {
+                    padding-right: 0;
+                }
+            }
+
+            &.image-position-right {
+                .image-card {
+                    padding-left: 0;
+                }
+            }
+        }
         
         .image-block-outer-wrapper::before {
             content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
