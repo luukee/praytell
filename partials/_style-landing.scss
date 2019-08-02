@@ -2,7 +2,9 @@
 #wine-landing {
 	// shape orange amoeba
 	.Index-page-content {
-		background: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-orange-shape.svg") top center / 80% no-repeat;
+		background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-orange-shape.svg") no-repeat 9% 32%;
+		background-position: 9% 32%;
+		background-repeat: no-repeat;
 
 		@media only screen and (max-width: 640px) {
 			background-size: 113%;
