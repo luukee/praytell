@@ -3,10 +3,10 @@
 	// shape orange amoeba
 	.Index-page-content {
 		background: 
-			left 57%
 			url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-orange-shape.svg) 
 			63% 
 			no-repeat;
+			background-position: left 57%;
 
 		@media only screen and (max-width: 640px) {
 			background-size: 113%;
