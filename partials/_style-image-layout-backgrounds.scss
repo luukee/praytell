@@ -5,15 +5,12 @@
         // background: red;
         
         .image-block-outer-wrapper::before {
-            // padding-left: 5rem;
-            // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
-            // background-position: left top;
-            // background-repeat: no-repeat;
-            // padding-top: 9rem;
             content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
             position: absolute;
             width: 100%;
             height: 100%;
+            z-index: 9;
+            left: 341px;
 
             @media only screen and (max-width: 640px) {
                 padding-left: 0;
