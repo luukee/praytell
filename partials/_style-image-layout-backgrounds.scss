@@ -2,7 +2,7 @@
 #wine-about {
 
     .image-block:nth-of-type(2) {
-        background: red;
+        // background: red;
         
         .image-block-outer-wrapper::before {
             // padding-left: 5rem;
@@ -14,7 +14,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            
+
             @media only screen and (max-width: 640px) {
                 padding-left: 0;
 
