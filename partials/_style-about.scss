@@ -10,14 +10,16 @@
     //     background-position: left bottom;
     // }
 
+    // about title
     .section-title.about {
         background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-blue-green-title-background.svg");
         background-position: top;
         background-repeat: no-repeat;
     }
 
+    // entire background
     .Index-page-content {
-        background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-tan-shape.svg");
+        background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/about-face.svg");
         background-position: 100% 46%;
         background-repeat: no-repeat;
     }
@@ -39,25 +41,6 @@
                     width: 70vw;
                 }
             }
-
-            .image-card-wrapper {
-                padding-left: 5rem;
-                background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
-                background-position: left top;
-                background-repeat: no-repeat;
-                padding-top: 9rem;
-
-                @media only screen and (max-width: 640px) {
-                    padding-left: 0;
-
-                }
-                .image-subtitle p {
-                    text-align: justify;
-                }
-            }
-
-
-
         } //end .image-block:nth-of-type(2)
 
         .image-block:nth-of-type(3) {
