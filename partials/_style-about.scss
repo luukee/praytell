@@ -1,15 +1,6 @@
 #about,
 #wine-about {
 
-    // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/jess-background-img-1.svg");
-    // background-repeat: no-repeat;
-    // background-position: 4vw 173vh;
-
-    // @media only screen and (max-width: 640px) {
-    //     background-size: 82%;
-    //     background-position: left bottom;
-    // }
-
     // about title
     .section-title.about {
         background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-blue-green-title-background.svg");
@@ -31,6 +22,7 @@
                 background-position: left 6vh;
                 background-repeat: no-repeat;
                 padding-left: 20px;
+                background-size: 100%;
 
                 @media only screen and (max-width: 640px) {
                     padding-left: 0;
