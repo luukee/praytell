@@ -5,39 +5,37 @@
 #wine-purchase {
     .row {
         .sqs-col-3 {
-            .image-container {
-                img {
-                    display: none;
-                }
-            }
+            // image caption
             .image-block-outer-wrapper {
-                .image-caption  p {
-                    text-align: right;
-                    line-height: 10em;
-                    font-size: 18px;
-                }
-            }
-            .sqs-product-quick-view-button-wrapper {
-                padding: 0 3em;
-                justify-content: flex-end;
-
-                .sqs-add-to-cart-button-wrapper {
-                    display: none;
-                }
-            }
-    
-            .image-caption {
+                .image-caption  {
                     padding: 0 48px;
-            }
-            .more-info {
-                padding: 0 3em;
-                cursor: pointer;
-            }
+                    p {
+                        text-align: right;
+                        line-height: 10em;
+                        font-size: 18px;
+                    }
+                }
+                .more-info {
+                    padding: 0 3em;
+                    cursor: pointer;
+                }
+                .code-block + .form-block {
+                        padding: 12px 0;
 
-            .code-block + .form-block {
-                    padding: 12px 0;
-
+                }
             }
+            // .sqs-product-quick-view-button-wrapper {
+            //     // padding: 0 3em;
+            //     // justify-content: flex-end;
+
+            //     .sqs-add-to-cart-button-wrapper {
+            //         // display: none;
+            //     }
+            // }
+    
+            
+
+
         }
         .sqs-col-3:not(:first-of-type) {
             .sqs-product-quick-view-button-wrapper {
@@ -51,11 +49,11 @@
         }
 
         // shape yellow title background
-.section-title.wine {
-    background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-our-wine-title-backgroundpray-tell-our-wine-title-background.svg");
-    background-position: top;
-    background-repeat: no-repeat;
-}
+        .section-title.wine {
+            background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-our-wine-title-backgroundpray-tell-our-wine-title-background.svg");
+            background-position: top;
+            background-repeat: no-repeat;
+        }
     }
 
     .productDetails {
