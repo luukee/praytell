@@ -99,7 +99,7 @@
     .image-block:nth-of-type(4) {
         .image-block-outer-wrapper {
             align-items: flex-end;
-            ::before {
+            &::before {
                 content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-brown-squigglepray-tell-brown-squiggle.svg");
                 position: absolute;
                 width: 100%;
