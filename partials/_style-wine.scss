@@ -6,9 +6,8 @@
 
     // title
     .section-title.wine {
-        background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-our-wine-title-backgroundpray-tell-our-wine-title-background.svg");
+        background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-our-wine-title-backgroundpray-tell-our-wine-title-background.svg) no-repeat;
         background-position: top;
-        background-repeat: no-repeat;
     }
 
     .row {
@@ -33,10 +32,10 @@
             }
 
             &:nth-child(1) {
-                background: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-gamay-shape.svg") no-repeat center top 20%;
+                background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-gamay-shape.svg) no-repeat center top 20%;
             }
             &:nth-child(2) {
-                background: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-gamay-shape.svg") no-repeat center top 20%;
+                background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-gamay-shape.svg) no-repeat center top 20%;
             }
         }
         // not the first column(gamay)
