@@ -60,8 +60,8 @@
             padding-left: 0;
         }
         
-        .image-block-outer-wrapper{
-                align-items: flex-end;
+        .image-block-outer-wrapper {
+                align-items: center;
 
             &::before {
                 content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
@@ -70,6 +70,10 @@
                 height: 100%;
                 z-index: 9;
                 left: 341px;
+            }
+
+            .image-card-wrapper {
+                padding-top: 50px;
             }
 
             @media only screen and (max-width: 640px) {
