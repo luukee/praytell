@@ -4,7 +4,15 @@
     // about title
     .section-title.about {
         background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-blue-green-title-background.svg) no-repeat;
-        background-position: top;
+        background-position: center;
+        padding: 6rem 0;
+
+        &::before {
+            content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-down.svg);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
     }
 
     // entire section background
