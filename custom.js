@@ -30,17 +30,17 @@
 
 
     // add onclick="openLightbox();" to wine bottle
-    // var wineBottle = document.querySelector("#wine .row .sqs-col-3:nth-child(1) .image-block");
-    // wineBottle.setAttribute("onclick", "openLightbox();");
+    var wineBottle = document.querySelector("#wine-purchase .row .sqs-col-3:nth-child(1) .image-block");
+    wineBottle.setAttribute("onclick", "openLightbox();");
 
     // change product quickview button text
-    elements = document.getElementsByClassName("sqs-product-quick-view-button")[0];
-    var i = 0;
-    var len = elements.length;
-    for (i = 0; i < len; i++) {
-        var elem = elements[i];
-        elem.innerHTML = 'More info. . .';
-    }
+    // elements = document.getElementsByClassName("sqs-product-quick-view-button")[0];
+    // var i = 0;
+    // var len = elements.length;
+    // for (i = 0; i < len; i++) {
+    //     var elem = elements[i];
+    //     elem.innerHTML = 'More info. . .';
+    // }
 
     /* lightbox! */
     // let slideIndex = 1;
