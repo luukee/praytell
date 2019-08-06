@@ -42,22 +42,13 @@ if (document.querySelector("body:not(.homepage)")) {
 
     // HOMEPAGE move trade content to .homepage lightbox
     tradeLightbox.after(tradeContent);
-    
+
     // add onclick="openLightbox();" to wine bottle
     wineBottle.setAttribute("onclick", "openLightbox();");
 
     // move lightbox button to the .homepage lightbox
     wineContent.after(wineLightbox);
 }
-
-
-
-
-
-
-
-
-
 
     /* lightboxes! */
     function openLightbox() {
