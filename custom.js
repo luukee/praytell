@@ -1,36 +1,48 @@
-   /*change header logo link if NOT on homepage */
+
+
+
+
+
+    // not homepage
+if (document.querySelector("body:not(.homepage)")) {
+
+    /*change header logo link if NOT on homepage */
     var headerElement = document.getElementsByClassName("Header-branding")[0];
-    if (document.querySelector("body:not(.homepage)")) {
-        headerElement.setAttribute("href", "/wine-home");
-    }
-
     var mobileHeaderElement = document.getElementsByClassName("Mobile-bar-branding")[0];
-    if (document.querySelector("body:not(.homepage)")) {
-        mobileHeaderElement.setAttribute("href", "/wine-home");
-    }
+
+    // desktop
+    headerElement.setAttribute("href", "/wine-home");
+    // mobile
+    mobileHeaderElement.setAttribute("href", "/wine-home");
 
 
+    // HOMEPAGE move trade content to .homepage lightbox
+    const wineTradeContent = document.getElementById("wine-trade");
+    const wineTradeLightbox = document.querySelector("#trade-Lightbox .modal-content .close");
+    wineTradeLightbox.after(wineTradeContent);
+
+    // homepage
+} else {
+    // HOMEPAGE move trade content to .homepage lightbox
+    const tradeContent = document.getElementById("trade");
+    const tradeLightbox = document.querySelector("#trade-Lightbox .modal-content .close");
+    tradeLightbox.after(tradeContent);
 
     // move lightbox button to the .homepage lightbox
     const div1 = document.getElementById("container-ligtbox-register-btn");
     const div2 = document.getElementById("lightbox-register-button");
     div1.after(div2);
+}
 
-
-
-    // move trade content to .homepage lightbox
-    const tradeContent = document.getElementById("trade");
-    const tradeLightbox = document.querySelector("#trade-Lightbox .close.pointer");
-    tradeLightbox.after(tradeContent);
 
 
 
     // WINE HOME move addtocart button to the .homepage lightbox
-    const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");    
-    const lightboxBtnArea = document.querySelector("#Lightbox .sqs-block-content");
-    if (document.querySelector("body:not(.homepage)")) {
-        addToCartBtn.after(lightboxBtnArea);
-    }
+    // const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");    
+    // const lightboxBtnArea = document.querySelector("#Lightbox .sqs-block-content");
+    // if (document.querySelector("body:not(.homepage)")) {
+    //     addToCartBtn.after(lightboxBtnArea);
+    // }
 
 
     // add onclick="openLightbox();" to wine bottle
