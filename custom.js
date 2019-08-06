@@ -63,12 +63,15 @@ if (document.querySelector("body:not(.homepage)")) {
 
     // move lightbox button to the .homepage lightbox
     wineContent.after(wineLightbox);
-}
+} // end IF statement
 
     /* lightboxes! */
     function openLightbox() {
+        const bodyElement = document.querySelector('body');
+
         document.getElementById('Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
-        document.querySelector('body').setAttribute("class", "active");
+        bodyElement.classList.toggle('noscroll', overlayOpen);
+
 
     }
     function closeLightbox() {
