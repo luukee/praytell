@@ -1,9 +1,6 @@
 
 
-function tiltTwenty() {
-    const tiltTwenty = document.querySelector('img[alt*="tilted-right"]');
-    tiltTwenty.classList.add('tilt-right');
-}
+
 
 
     // not homepage
@@ -91,3 +88,16 @@ if (document.querySelector("body:not(.homepage)")) {
     }
 
 
+
+
+    // do the tilt!!!
+
+(function () {
+    const tiltRight = document.querySelector('img[alt*="tilt-right"]');
+    tiltRight.classList.add('tilt-right');
+})();
+
+(function () {
+    const tiltLeft = document.querySelector('img[alt*="tilt-left"]');
+    tiltLeft.classList.add('tilt-left');
+})();
