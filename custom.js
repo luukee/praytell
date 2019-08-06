@@ -10,15 +10,23 @@
     }
 
 
+
     // move lightbox button to the .homepage lightbox
     const div1 = document.getElementById("container-ligtbox-register-btn");
     const div2 = document.getElementById("lightbox-register-button");
     div1.after(div2);
 
+    // move distribution content to .homepage lightbox
+    const div1 = document.getElementById("container-ligtbox-register-btn");
+    const div2 = document.getElementById("lightbox-register-button");
+    div1.after(div2);
+
     // WINE HOME move addtocart button to the .homepage lightbox
-const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");    
-const lightboxBtnArea = document.getElementById("container-ligtbox-register-btn");
-addToCartBtn.after(lightboxBtnArea);
+    const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");    
+    const lightboxBtnArea = document.querySelector("#Lightbox .sqs-block-content");
+    if (document.querySelector("body:not(.homepage)")) {
+        addToCartBtn.after(lightboxBtnArea);
+    }
 
 
     // add onclick="openLightbox();" to wine bottle
@@ -45,42 +53,46 @@ addToCartBtn.after(lightboxBtnArea);
         document.getElementById('Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
     }
 
+    function openTradeLightbox() {
+        document.getElementById('trade-Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
+    }
+
     function closeLightbox() {
         document.getElementById('Lightbox').setAttribute("style", "display:none; opacity:0;");
     };
 
     // Note that you are assigning new values here to our slidIndex.
 
-    function changeSlide(n) {
-        showSlide(slideIndex += n);
-    };
+    // function changeSlide(n) {
+    //     showSlide(slideIndex += n);
+    // };
 
-    function toSlide(n) {
-        showSlide(slideIndex = n);
-    };
+    // function toSlide(n) {
+    //     showSlide(slideIndex = n);
+    // };
 
     // This is your logic for the light box. It will decide which slide to show 
     // and which dot is active.
 
-    function showSlide(n) {
-        const slides = document.getElementsByClassName('slide');
-        let modalPreviews = document.getElementsByClassName('modal-preview');
+    // function showSlide(n) {
+    //     const slides = document.getElementsByClassName('slide');
+    //     let modalPreviews = document.getElementsByClassName('modal-preview');
 
-        if (n > slides.length) {
-            slideIndex = 1;
-        };
+    //     if (n > slides.length) {
+    //         slideIndex = 1;
+    //     };
 
-        if (n < 1) {
-            slideIndex = slides.length;
-        };
+    //     if (n < 1) {
+    //         slideIndex = slides.length;
+    //     };
 
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].setAttribute("style", "display:none; opacity:0;");
-        };
+    //     for (let i = 0; i < slides.length; i++) {
+    //         slides[i].setAttribute("style", "display:none; opacity:0;");
+    //     };
 
-        for (let i = 0; i < modalPreviews.length; i++) {
-            modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
-        };
+    //     for (let i = 0; i < modalPreviews.length; i++) {
+    //         modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+    //     };
 
-    };
+    // };
 
