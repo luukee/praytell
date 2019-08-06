@@ -42,6 +42,15 @@ body.noscroll {
 		// overflow: auto;
 		margin-top: 40px;
 
+		.lightbox-inner {
+			position: absolute;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+			width: 100%;
+			height: 100%;
+			top: 0;
+		}
+
 		.Index-page {
 			margin-top: 30px;
 		}
