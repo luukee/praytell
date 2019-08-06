@@ -64,7 +64,7 @@ if (document.querySelector("body:not(.homepage)")) {
     wineBottle.setAttribute("onclick", "openLightbox();");
 
     // move lightbox button to the .homepage lightbox
-    wineContent.after(wineLightbox);
+    // wineContent.after(wineLightbox);
 } // end IF statement
 
     /* lightboxes! */
