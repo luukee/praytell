@@ -15,6 +15,11 @@
     const div2 = document.getElementById("lightbox-register-button");
     div1.after(div2);
 
+    // WINE HOME move addtocart button to the .homepage lightbox
+const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");    
+const lightboxBtnArea = document.getElementById("container-ligtbox-register-btn");
+addToCartBtn.after(lightboxBtnArea);
+
 
     // add onclick="openLightbox();" to wine bottle
     var wineBottle = document.querySelector("#wine .row .sqs-col-3:nth-child(1) .image-block");
