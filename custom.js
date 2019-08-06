@@ -18,7 +18,7 @@
 
     // add onclick="openLightbox();" to wine bottle
     var wineBottle = document.querySelector("#wine .row .sqs-col-3:nth-child(1) .image-block");
-    wineBottles.setAttribute("onclick", "openLightbox();");
+    wineBottle.setAttribute("onclick", "openLightbox();");
 
     // change product quickview button text
     elements = document.getElementsByClassName("sqs-product-quick-view-button");
