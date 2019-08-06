@@ -8,6 +8,10 @@
 	background: #fae7d6;
 }
 
+body.noscroll { 
+  overflow: hidden;
+}
+
 .modal {
 	display: none;
 	opacity: 0;
