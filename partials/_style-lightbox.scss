@@ -1,5 +1,3 @@
-
-
 .sqs-lightbox-overlay.sqs-lightbox-overlay-default {
 	opacity: 0.93 !important;
 }
@@ -8,8 +6,8 @@
 	background: #fae7d6;
 }
 
-body.noscroll { 
-  overflow: hidden;
+body.noscroll {
+	overflow: hidden;
 }
 
 .modal {
@@ -25,34 +23,34 @@ body.noscroll {
 	transition: opacity 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
 	.modal-background {
-		    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
 		background-color: rgba(0, 0, 0, 0.63);
 		transition: opacity 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 	}
 
 	.lightbox-content {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-    padding: 40px;
-	color: #5a6657;
-	background: #fae7d6;
-	overflow: auto;
-	margin-top: 40px;
+		max-width: 900px;
+		margin: 0 auto;
+		position: relative;
+		padding: 40px;
+		color: #5a6657;
+		background: #fae7d6;
+		// overflow: auto;
+		margin-top: 40px;
 
 		.Index-page {
-    margin-top: 30px;
+			margin-top: 30px;
 		}
 
 		#register-popup,
 		#wine-register-popup {
 			background: url(https://scarlet-trout-cs7a.squarespace.com/s/orange-corner.svg) no-repeat;
 			background-size: 33%;
-			
+
 			&::before {
 				content: url("https://scarlet-trout-cs7a.squarespace.com/s/blue-half-circle.svg");
 				position: absolute;
@@ -62,13 +60,11 @@ body.noscroll {
 		}
 		.Index-page-content {
 			padding: 0;
-
 		}
 	}
 
 	.Main-content {
 		padding: 3em 0;
-
 
 		.Index-page-content {
 			// padding: 0;
@@ -87,20 +83,19 @@ body.noscroll {
 		text-align: justify;
 	}
 	.close {
-
 		z-index: 9999;
 
-		    position: absolute;
-    color: #5a6657;
-    font-size: 22px;
-    font-family: Arial,Helvetica,sans-serif;
-    font-style: normal;
-    width: 22px;
-    line-height: 22px;
-    top: 40px;
-    right: 40px;
-    text-align: center;
-    cursor: pointer;
+		position: absolute;
+		color: #5a6657;
+		font-size: 22px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-style: normal;
+		width: 22px;
+		line-height: 22px;
+		top: 40px;
+		right: 40px;
+		text-align: center;
+		cursor: pointer;
 	}
 
 	.close:hover,
@@ -120,6 +115,6 @@ body.noscroll {
 #trade {
 	padding: 2rem;
 	.Index-page-content {
-		background: #fae7d6;	
+		background: #fae7d6;
 	}
 }
