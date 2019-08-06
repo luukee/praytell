@@ -94,20 +94,15 @@ if (document.querySelector("body:not(.homepage)")) {
 
 (function () {
     const tiltRight = document.querySelector('img[alt*="tilt-right"]');
-    tiltRight.classList.add('tilt-right');
-})();
+    
+    if(tiltRight) {
+        tiltRight.classList.add('tilt-right');
+    }
 
-(function () {
     const tiltLeft = document.querySelector('img[alt*="tilt-left"]');
     tiltLeft.classList.add('tilt-left');
-})();
-
-(function () {
     const tiltRightOne = document.querySelector('img[alt*="tilt-right-one"]');
     tiltRightOne.classList.add('tilt-right-one');
-})();
-
-(function () {
     const tiltLeftOne = document.querySelector('img[alt*="tilt-left-one"]');
     tiltLeftOne.classList.add('tilt-left-one');
 })();
