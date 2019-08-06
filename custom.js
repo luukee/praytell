@@ -33,8 +33,8 @@ if (document.querySelector("body:not(.homepage)")) {
     tradeLightbox.after(tradeContent);
 
     // move lightbox button to the .homepage lightbox
-    const wineContent = document.getElementById("trade");
-    const wineLightbox = document.querySelector("#trade-Lightbox .modal-content .close");
+    const wineContent = document.getElementById("container-ligtbox-register-btn");
+    const wineLightbox = document.getElementById("lightbox-register-button");
     wineContent.after(wineLightbox);
 }
 
