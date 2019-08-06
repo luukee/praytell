@@ -33,9 +33,6 @@
 		transition: opacity 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 	}
 
-	.Index-page-content {
-		background: #fae7d6;	
-	}
 	.modal-content {
 		position: relative;
 		display: flex;
@@ -107,4 +104,7 @@
 // trade lightbox
 #trade {
 	padding: 2rem;
+	.Index-page-content {
+		background: #fae7d6;	
+	}
 }
