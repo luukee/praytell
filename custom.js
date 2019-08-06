@@ -11,10 +11,10 @@ if (document.querySelector("body:not(.homepage)")) {
     const headerElement = document.getElementsByClassName("Header-branding")[0];
     const mobileHeaderElement = document.getElementsByClassName("Mobile-bar-branding")[0];
     const wineTradeContent = document.getElementById("wine-trade");
-    const wineTradeLightbox = document.querySelector("#trade-Lightbox .modal-content .close");
+    const wineTradeLightbox = document.querySelector("#trade-Lightbox .lightbox-content .close");
     
     const registerWineContent = document.getElementById("wine-register-popup");
-    const registerWineLightbox = document.querySelector("#Lightbox .modal-content .close");
+    const registerWineLightbox = document.querySelector("#Lightbox .register .close");
 
     
     const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");
@@ -44,10 +44,10 @@ if (document.querySelector("body:not(.homepage)")) {
     // vars
     const wineBottle = document.querySelector("#wine .row .sqs-col-3:nth-child(1) .thumb-image");
     const tradeContent = document.getElementById("trade");
-    const tradeLightbox = document.querySelector("#trade-Lightbox .modal-content .close");
+    const tradeLightbox = document.querySelector("#trade-Lightbox .lightbox-content .close");
     
     const registerContent = document.getElementById("register-popup");
-    const registerLightbox = document.querySelector("#Lightbox .modal-content .close");
+    const registerLightbox = document.querySelector("#Lightbox .register .close");
 
     const wineContent = document.getElementById("container-ligtbox-register-btn");
     const wineLightbox = document.getElementById("lightbox-register-button");
