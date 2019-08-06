@@ -1,6 +1,9 @@
 
 
-
+function tiltTwenty() {
+    const tiltTwenty = document.querySelector('img[alt*="tilted-right"]');
+    tiltTwenty.classList.add('tilt-right');
+}
 
 
     // not homepage
@@ -15,7 +18,6 @@ if (document.querySelector("body:not(.homepage)")) {
     
     const registerWineContent = document.getElementById("wine-register-popup");
     const registerWineLightbox = document.querySelector("#Lightbox .register .close");
-
     
     const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");
     const lightboxBtnArea = document.querySelector("#Lightbox .sqs-block-content");
@@ -67,22 +69,25 @@ if (document.querySelector("body:not(.homepage)")) {
 
     /* lightboxes! */
     function openLightbox() {
-        var body = document.body;
 
         document.getElementById('Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
-        body.classList.toggle('noscroll');
+        document.body.classList.toggle('noscroll');
 
     }
     function closeLightbox() {
         document.getElementById('Lightbox').setAttribute("style", "display:none; opacity:0;");
+        document.body.classList.toggle('noscroll');
+
     }
 
     // trade lightbox
     function openTradeLightbox() {
         document.getElementById('trade-Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
+        document.body.classList.toggle('noscroll');
     }
     function closeTradeLightbox() {
         document.getElementById('trade-Lightbox').setAttribute("style", "display:none; opacity:0;");
+        document.body.classList.toggle('noscroll');
     }
 
 
