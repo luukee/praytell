@@ -53,10 +53,12 @@
 		}
 		.Index-page-content {
 			padding: 0;
-			background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/blue-half-circle.svg");
-			background-repeat: no-repeat;
-			background-position: 35vw bottom;
-			background-size: 13%;
+			&::before {
+				content: url("https://scarlet-trout-cs7a.squarespace.com/s/blue-half-circle.svg");
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
 		}
 	}
 
