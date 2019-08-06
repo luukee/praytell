@@ -37,14 +37,16 @@
     function openLightbox() {
         document.getElementById('Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
     }
-
-    function openTradeLightbox() {
-        document.getElementById('trade-Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
-    }
-
     function closeLightbox() {
         document.getElementById('Lightbox').setAttribute("style", "display:none; opacity:0;");
     }
 
+    // trade lightbox
+    function openTradeLightbox() {
+        document.getElementById('trade-Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
+    }
+    function closeTradeLightbox() {
+        document.getElementById('trade-Lightbox').setAttribute("style", "display:none; opacity:0;");
+    }
 
 
