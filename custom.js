@@ -17,9 +17,9 @@
     div1.after(div2);
 
     // move distribution content to .homepage lightbox
-    const div1 = document.getElementById("container-ligtbox-register-btn");
-    const div2 = document.getElementById("lightbox-register-button");
-    div1.after(div2);
+    // const div1 = document.getElementById("container-ligtbox-register-btn");
+    // const div2 = document.getElementById("lightbox-register-button");
+    // div1.after(div2);
 
     // WINE HOME move addtocart button to the .homepage lightbox
     const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");    
