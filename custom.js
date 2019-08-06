@@ -33,15 +33,6 @@
     var wineBottle = document.querySelector("#wine .row .sqs-col-3:nth-child(1) .thumb-image");
     wineBottle.setAttribute("onclick", "openLightbox();");
 
-    // change product quickview button text
-    // elements = document.getElementsByClassName("sqs-product-quick-view-button")[0];
-    // var i = 0;
-    // var len = elements.length;
-    // for (i = 0; i < len; i++) {
-    //     var elem = elements[i];
-    //     elem.innerHTML = 'More info. . .';
-    // }
-
     /* lightboxes! */
     function openLightbox() {
         document.getElementById('Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
