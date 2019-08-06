@@ -16,7 +16,9 @@ section#trade {
     display: none;
 }
 
-.modal {
+.modal,
+section#trade,
+section#wine-trade {
 	display: none;
 	opacity: 0;
 	position: fixed;
