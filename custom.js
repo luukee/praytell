@@ -21,7 +21,7 @@
     wineBottle.setAttribute("onclick", "openLightbox();");
 
     // change product quickview button text
-    elements = document.getElementsByClassName("sqs-product-quick-view-button");
+    elements = document.getElementsByClassName("sqs-product-quick-view-button")[0];
     var i = 0;
     var len = elements.length;
     for (i = 0; i < len; i++) {
