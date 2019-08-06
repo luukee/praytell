@@ -67,10 +67,10 @@ if (document.querySelector("body:not(.homepage)")) {
 
     /* lightboxes! */
     function openLightbox() {
-        const bodyElement = document.querySelector('body');
+        var body = document.body;
 
         document.getElementById('Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
-        bodyElement.classList.toggle('noscroll', overlayOpen);
+        body.classList.toggle('noscroll', overlayOpen);
 
 
     }
