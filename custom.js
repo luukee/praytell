@@ -12,6 +12,11 @@ if (document.querySelector("body:not(.homepage)")) {
     const mobileHeaderElement = document.getElementsByClassName("Mobile-bar-branding")[0];
     const wineTradeContent = document.getElementById("wine-trade");
     const wineTradeLightbox = document.querySelector("#trade-Lightbox .modal-content .close");
+    
+    const registerWineContent = document.getElementById("wine-register-popup");
+    const registerWineLightbox = document.querySelector("#Lightbox .modal-content .close");
+
+    
     const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");
     const lightboxBtnArea = document.querySelector("#Lightbox .sqs-block-content");
 
@@ -26,6 +31,9 @@ if (document.querySelector("body:not(.homepage)")) {
 
     // move trade content to .homepage lightbox
     wineTradeLightbox.after(wineTradeContent);
+
+    // HOMEPAGE move register content to register lightbox
+    registerWineLightbox.after(registerWineContent);
 
     // move addtocart button to the .homepage lightbox
     addToCartBtn.after(lightboxBtnArea);
