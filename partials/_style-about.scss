@@ -110,14 +110,11 @@
             }
         }
     }
-
-        .row > .sqs-col-12 > {
-
-            div:last-child {
-                background: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-up.svg) no-repeat;
-            }
-
-        } // end row
+    .image-block:nth-of-type(6)::before {
+        content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-up.svg);
+        position: absolute;
+        bottom: -179px;
+    }
 }
     // // everything but the first image block
     // .image-block:not(:nth-of-type(2)) {
