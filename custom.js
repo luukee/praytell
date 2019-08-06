@@ -15,11 +15,15 @@ if (document.querySelector("body:not(.homepage)")) {
     // mobile
     mobileHeaderElement.setAttribute("href", "/wine-home");
 
-
     // HOMEPAGE move trade content to .homepage lightbox
     const wineTradeContent = document.getElementById("wine-trade");
     const wineTradeLightbox = document.querySelector("#trade-Lightbox .modal-content .close");
     wineTradeLightbox.after(wineTradeContent);
+
+    // NOT HOME move addtocart button to the .homepage lightbox
+    const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");
+    const lightboxBtnArea = document.querySelector("#Lightbox .sqs-block-content");
+    addToCartBtn.after(lightboxBtnArea);
 
     // homepage
 } else {
@@ -29,20 +33,16 @@ if (document.querySelector("body:not(.homepage)")) {
     tradeLightbox.after(tradeContent);
 
     // move lightbox button to the .homepage lightbox
-    const div1 = document.getElementById("container-ligtbox-register-btn");
-    const div2 = document.getElementById("lightbox-register-button");
-    div1.after(div2);
+    const wineContent = document.getElementById("trade");
+    const wineLightbox = document.querySelector("#trade-Lightbox .modal-content .close");
+    wineContent.after(wineLightbox);
 }
 
 
 
 
-    // WINE HOME move addtocart button to the .homepage lightbox
-    // const addToCartBtn = document.querySelector(".sqs-add-to-cart-button-wrapper");    
-    // const lightboxBtnArea = document.querySelector("#Lightbox .sqs-block-content");
-    // if (document.querySelector("body:not(.homepage)")) {
-    //     addToCartBtn.after(lightboxBtnArea);
-    // }
+
+
 
 
     // add onclick="openLightbox();" to wine bottle
