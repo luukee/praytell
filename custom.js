@@ -68,6 +68,8 @@ if (document.querySelector("body:not(.homepage)")) {
     /* lightboxes! */
     function openLightbox() {
         document.getElementById('Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
+        document.querySelector('body').setAttribute("class", "active");
+
     }
     function closeLightbox() {
         document.getElementById('Lightbox').setAttribute("style", "display:none; opacity:0;");
