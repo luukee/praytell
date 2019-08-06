@@ -44,26 +44,26 @@
 		.Index-page {
 			background-color: transparent;
 		}
+
+		#register-popup {
+			background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/orange-corner.svg");
+			background-repeat: no-repeat;
+			background-position: 4vw 0;
+			background-size: 33%;
+		}
 		.Index-page-content {
 			padding: 0;
+			background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/blue-half-circle.svg");
+			background-repeat: no-repeat;
+			background-position: 35vw bottom;
+			background-size: 13%;
 		}
 	}
 
 	.Main-content {
 		padding: 3em 0;
 
-		> .sqs-layout {
-			background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/orange-corner.svg");
-			background-repeat: no-repeat;
-			background-position: 4vw 0;
-			background-size: 33%;
-			> .sqs-row {
-				background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/blue-half-circle.svg");
-				background-repeat: no-repeat;
-				background-position: 35vw bottom;
-				background-size: 13%;
-			}
-		}
+
 		.Index-page-content {
 			// padding: 0;
 
