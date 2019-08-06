@@ -10,6 +10,12 @@
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content {
 	background: #fae7d6;
 }
+
+// distributions content inital hide
+section#distribution-tech-sheets {
+    display: none;
+}
+
 .modal {
 	display: none;
 	opacity: 0;
