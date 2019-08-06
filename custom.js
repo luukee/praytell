@@ -6,6 +6,9 @@
     // not homepage
 if (document.querySelector("body:not(.homepage)")) {
 
+    // wine bottle image
+    var wineBottle = document.querySelector("#wine-purchase .row .sqs-col-3:nth-child(1) .thumb-image");
+
     /*change header logo link if NOT on homepage */
     var headerElement = document.getElementsByClassName("Header-branding")[0];
     var mobileHeaderElement = document.getElementsByClassName("Mobile-bar-branding")[0];
@@ -14,6 +17,8 @@ if (document.querySelector("body:not(.homepage)")) {
     headerElement.setAttribute("href", "/wine-home");
     // mobile
     mobileHeaderElement.setAttribute("href", "/wine-home");
+    // wine bottle lightbox button
+    wineBottle.setAttribute("onclick", "openLightbox();");
 
     // HOMEPAGE move trade content to .homepage lightbox
     const wineTradeContent = document.getElementById("wine-trade");
