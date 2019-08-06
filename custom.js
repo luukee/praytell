@@ -70,8 +70,7 @@ if (document.querySelector("body:not(.homepage)")) {
         var body = document.body;
 
         document.getElementById('Lightbox').setAttribute("style", "display:flex; opacity:1;", "class", "active");
-        body.classList.toggle('noscroll', overlayOpen);
-
+        body.classList.toggle('noscroll');
 
     }
     function closeLightbox() {
