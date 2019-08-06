@@ -20,7 +20,7 @@
 
     // move trade content to .homepage lightbox
     const tradeContent = document.getElementById("trade");
-    const tradeLightbox = document.querySelector("#trade-Lightbox .modal-content");
+    const tradeLightbox = document.querySelector("#trade-Lightbox .close.pointer");
     tradeLightbox.after(tradeContent);
 
 
