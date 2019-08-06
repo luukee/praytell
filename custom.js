@@ -93,16 +93,29 @@ if (document.querySelector("body:not(.homepage)")) {
     // do the tilt!!!
 
 (function () {
-    const tiltRight = document.querySelector('img[alt*="tilt-right"]');
-    
-    if(tiltRight) {
+    const tiltRight = document.querySelectorAll('img[alt*="tilt-right"]');
+    tiltRight.forEach(function (tiltRight) {
         tiltRight.classList.add('tilt-right');
-    }
+    });
+})();
 
-    const tiltLeft = document.querySelector('img[alt*="tilt-left"]');
-    tiltLeft.classList.add('tilt-left');
-    const tiltRightOne = document.querySelector('img[alt*="tilt-right-one"]');
-    tiltRightOne.classList.add('tilt-right-one');
-    const tiltLeftOne = document.querySelector('img[alt*="tilt-left-one"]');
-    tiltLeftOne.classList.add('tilt-left-one');
+(function () {
+    const tiltLeft = document.querySelectorAll('img[alt*="tilt-left"]');
+    tiltLeft.forEach(function (tiltLeft) {
+        tiltLeft.classList.add('tilt-left');
+    });
+})();
+
+(function () {
+    const tiltRightOne = document.querySelectorAll('img[alt*="tilt-right-one"]');
+    tiltRightOne.forEach(function(tiltRightOne) {
+        tiltRightOne.classList.add('tilt-right-one');
+    });
+})();
+
+(function () {
+    const tiltLeftOne = document.querySelectorAll('img[alt*="tilt-left-one"]');
+    tiltLeftOne.forEach(function(tiltLeftOne) {
+        tiltLeftOne.classList.add('tilt-left-one');
+    });
 })();
