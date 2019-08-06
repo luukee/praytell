@@ -59,7 +59,7 @@
 
     function closeLightbox() {
         document.getElementById('Lightbox').setAttribute("style", "display:none; opacity:0;");
-    };
+    }
 
     // Note that you are assigning new values here to our slidIndex.
 
