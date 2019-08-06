@@ -32,6 +32,22 @@ body {
 	}
 }
 
+// lightbox OPEN buttons
+.lightbox-handle-wrapper .lightbox-handle {
+	font-size: 18px;
+	padding: 0 !important;
+	text-decoration: underline;
+	line-height: 1.8em;
+
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+body:not(.button-style-default).button-style-outline .sqs-alternate-block-style-container .sqs-editable-button:hover {
+	background-color: transparent;
+}
+
 .modal-content #lightbox-register-button {
 	background-color: transparent;
 }
