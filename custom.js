@@ -43,8 +43,8 @@
     }
 
     /* lightbox! */
-    let slideIndex = 1;
-    showSlide(slideIndex);
+    // let slideIndex = 1;
+    // showSlide(slideIndex);
 
     // You are providing the functionality for your clickable content, which is 
     // your previews, dots, controls and the close button.
