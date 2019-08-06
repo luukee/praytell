@@ -43,7 +43,7 @@
     }
 
     function closeLightbox() {
-        document.getElementById('Lightbox').setAttribute("style", "display:none; opacity:0;");
+        document.getElementsByClassName('modal').setAttribute("style", "display:none; opacity:0;");
     }
 
 
