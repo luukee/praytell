@@ -12,6 +12,10 @@
 
     .row {
         .sqs-col-3 {
+            .more-info {
+                padding: 0 3em;
+                cursor: pointer;
+            }
             // image caption
             .image-block-outer-wrapper {
                 .image-caption  {
@@ -21,10 +25,6 @@
                         line-height: 10em;
                         font-size: 18px;
                     }
-                }
-                .more-info {
-                    padding: 0 3em;
-                    cursor: pointer;
                 }
                 .code-block + .form-block {
                         padding: 12px 0;
