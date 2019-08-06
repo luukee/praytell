@@ -37,11 +37,18 @@ if (document.querySelector("body:not(.homepage)")) {
     const wineBottle = document.querySelector("#wine .row .sqs-col-3:nth-child(1) .thumb-image");
     const tradeContent = document.getElementById("trade");
     const tradeLightbox = document.querySelector("#trade-Lightbox .modal-content .close");
+    
+    const registerContent = document.getElementById("register-popup");
+    const registerLightbox = document.querySelector("#Lightbox .modal-content .close");
+
     const wineContent = document.getElementById("container-ligtbox-register-btn");
     const wineLightbox = document.getElementById("lightbox-register-button");
 
     // HOMEPAGE move trade content to .homepage lightbox
     tradeLightbox.after(tradeContent);
+
+    // HOMEPAGE move register content to register lightbox
+    registerLightbox.after(registerContent);
 
     // add onclick="openLightbox();" to wine bottle
     wineBottle.setAttribute("onclick", "openLightbox();");
