@@ -51,11 +51,11 @@ footer.Footer {
 	.sqs-layout [class*="sqs-col"] {
 		@include breakpoint(small-only) {
 			float: left !important;
-            width: 100% !important;
-            .row.sqs-row {
-    display: flex;
-    align-items: center;
-}
+			width: 100% !important;
+			.row.sqs-row {
+				display: flex;
+				align-items: center;
+			}
 		}
 	}
 
