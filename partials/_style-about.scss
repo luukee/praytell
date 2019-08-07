@@ -111,8 +111,11 @@
 			}
 		}
 		.intrinsic {
-			padding-top: 6rem;
-			@media only screen and (max-width: 640px) {
+            @include breakpoint(medium-landscape-up) {
+                			padding-top: 6rem;
+
+            }
+            @media only screen and (max-width: 640px) {
 				width: 70vw;
 			}
 		}
