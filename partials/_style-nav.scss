@@ -48,12 +48,12 @@ footer.Footer {
 	background-repeat: no-repeat;
 	background-size: contain;
 
-.sqs-layout [class*=sqs-col] {
-    @include breakpoint(small-only) {
-            float: left !important;
-    width: 100% !important;
-    }
-}
+	.sqs-layout [class*="sqs-col"] {
+		@include breakpoint(small-only) {
+			float: left !important;
+			width: 100% !important;
+		}
+	}
 
 	.code-block .sqs-block-content {
 		@include breakpoint(medium-portrait-up) {
