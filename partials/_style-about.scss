@@ -143,9 +143,16 @@
 		}
 	}
 	.image-block:nth-of-type(6)::before {
-		content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-up.svg);
-		position: absolute;
-		bottom: -179px;
+    content: "";
+    position: absolute;
+    background: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-up.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 60%;
+    height: 113%;
+    top: 41%;
+    right: 0;
 	}
 }
 // // everything but the first image block
