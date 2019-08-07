@@ -14,14 +14,16 @@
         padding: 6rem 0;
 
         &::before {
-            content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-down.svg);
-            position: absolute;
-            right: 0;
-            top: 0;
 
-            @media (max-width: 640px) {
-                content: "";
+            @include for-size(medium-landscape-up) {    
+                content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-down.svg);
+                position: absolute;
+                right: 0;
+                top: 0;   
             }
+            // @media (max-width: 640px) {
+            //     content: "";
+            // }
         }
     }
  
