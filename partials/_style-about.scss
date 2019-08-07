@@ -62,15 +62,14 @@
 		.image-block-outer-wrapper .image-card-wrapper {
 			& * {
 				text-align: justify;
-			} 
+			}
 			@include breakpoint(small-only) {
 				width: 100%;
 				margin-top: calc(9% - 10%);
-            }
-            @include breakpoint(medium) {
-                    margin-top: calc(18% - 10%);
-
-            }
+			}
+			@include breakpoint(medium) {
+				margin-top: calc(18% - 10%);
+			}
 		}
 	}
 
