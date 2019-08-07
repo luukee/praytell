@@ -81,11 +81,14 @@
                 content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
                 position: absolute;
                 z-index: 9;
-                left: 341px; 
-
+                left: 90px;
+                top: -150px;
                 @include breakpoint(medium) {
-                        left: 190px;
-    top: -140px;
+                    left: 190px;
+                    top: -140px;
+                }
+                @include breakpoint(medium-landscape-up) {
+                    left: 341px; 
                 }
             }
 
