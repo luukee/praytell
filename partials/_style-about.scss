@@ -58,7 +58,7 @@
             &.image-position-right {
                 .image-card {
                     @include breakpoint(medium-landscape-up) {
-                        padding-left: 100px;
+                        padding-left: 100px; 
                     }
                 }
             }
