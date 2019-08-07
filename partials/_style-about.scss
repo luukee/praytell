@@ -15,7 +15,7 @@
 
         &::before {
 
-            @include for-size(medium-landscape-up) {    
+            @include breakpoint(medium-landscape-up) {    
                 content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-down.svg);
                 position: absolute;
                 right: 0;
