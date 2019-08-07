@@ -125,19 +125,19 @@
 			align-items: flex-end;
 			&::before {
 				content: "";
-					position: absolute;
-					background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-brown-squigglepray-tell-brown-squiggle.svg);
-					background-repeat: no-repeat;
-					background-size: contain;
-                    background-position: center;				
-                    width: 12%;
-                    height: 66%;
-                    top: 0;
-                    z-index: 99;
-				@include breakpoint(medium-landscape-up) {
-    height: 85%;
-    top: 42%;
-    left: -3%;
+				position: absolute;
+				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-brown-squigglepray-tell-brown-squiggle.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 12%;
+				height: 66%;
+				top: 0;
+				z-index: 99;
+				@include breakpoint(medium-portrait-up) {
+					height: 85%;
+					top: 42%;
+					left: -3%;
 				}
 			}
 		}
