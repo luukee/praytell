@@ -1,204 +1,203 @@
 #about,
 #wine-about {
+	// entire section background
+	.Index-page-content {
+		background: url(https://scarlet-trout-cs7a.squarespace.com/s/face-alone.svg) no-repeat;
+		@include breakpoint(small-only) {
+			background-size: 180%;
+			background-position: -165px 29%;
+		}
+		@include breakpoint(medium) {
+			background-size: contain;
+			background-position: 0 61%;
+		}
+		@include breakpoint(medium-landscape-up) {
+			background-position: 40% 60%;
+		}
+	}
 
-    // entire section background
-    .Index-page-content {
-        background: url(https://scarlet-trout-cs7a.squarespace.com/s/face-alone.svg) no-repeat;
-       @include breakpoint(small-only) {
-            background-size: 180%;
-            background-position: -165px 29%;
-       }
-       @include breakpoint(medium) {
-               background-size: contain;
-    background-position: 0 61%;
-       }
-        @include breakpoint(medium-landscape-up) {
-            background-position: 40% 60%;
-        }
-    }
+	// about title
+	.section-title.about {
+		background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-blue-green-title-background.svg)
+			no-repeat;
+		background-position: center;
+		padding: 6rem 0;
 
-    // about title
-    .section-title.about {
-        background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-blue-green-title-background.svg) no-repeat;
-        background-position: center;
-        padding: 6rem 0;
+		&::before {
+			@include breakpoint(medium-landscape-up) {
+				content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-down.svg);
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			// @media (max-width: 640px) {
+			//     content: "";
+			// }
+		}
+	}
 
-        &::before {
+	// all image blocks
+	.image-block {
+		@media only screen and (max-width: 640px) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 
-            @include breakpoint(medium-landscape-up) {    
-                content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-down.svg);
-                position: absolute;
-                right: 0;
-                top: 0;   
-            }
-            // @media (max-width: 640px) {
-            //     content: "";
-            // }
-        }
-    }
- 
-    // all image blocks
-    .image-block {
-        @media only screen and (max-width: 640px) {
-            padding-left: 0;
-            padding-right: 0;
-        }
+		// left and right image breakups
+		.design-layout-collage {
+			&.image-position-left {
+				.image-card {
+					@include breakpoint(medium-landscape-up) {
+						padding-right: 0;
+					}
+				}
+			}
 
-        // left and right image breakups
-        .design-layout-collage {
-        
-            &.image-position-left {
-                .image-card {
-                    @include breakpoint(medium-landscape-up) {
-                        padding-right: 0;
-                    }
-                }
-            }
+			&.image-position-right {
+				.image-card {
+					@include breakpoint(medium-landscape-up) {
+						padding-left: 0px;
+					}
+				}
+			}
+		}
 
-            &.image-position-right {
-                .image-card {
-                    @include breakpoint(medium-landscape-up) {
-                        padding-left: 0px; 
-                    }
-                }
-            }
-        }
+		.image-card-wrapper {
+			& * {
+				text-align: justify;
+			}
+			@media only screen and (max-width: 640px) {
+				width: 100%;
+				margin-top: calc(9% - 10%);
+			}
+		}
+	}
 
-        .image-card-wrapper {
+	// second block(first image block)
+	.image-block:nth-of-type(2) {
+		margin-bottom: -85px;
+		background: url(https://scarlet-trout-cs7a.squarespace.com/s/about-landing-2.svg) no-repeat;
+		background-position: left -1vh;
+		padding-left: 20px;
+		background-size: 98%;
 
-            & * {
-                text-align: justify;
-            }
-            @media only screen and (max-width: 640px) {
-                width: 100%;
-                margin-top: calc(9% - 10%);
-            }
-        }
-    }
+		@media only screen and (max-width: 640px) {
+			padding-left: 0;
+		}
 
-    // second block(first image block)
-    .image-block:nth-of-type(2) {
-        margin-bottom: -85px;
-        background: url(https://scarlet-trout-cs7a.squarespace.com/s/about-landing-2.svg) no-repeat;
-        background-position: left -1vh;
-        padding-left: 20px;
-        background-size: 98%;
+		.image-block-outer-wrapper {
+			align-items: center;
 
-        @media only screen and (max-width: 640px) {
-            padding-left: 0;
-        }
-        
-        .image-block-outer-wrapper {
-                align-items: center;
+			&::before {
+				content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
+				position: absolute;
+				z-index: 9;
+				left: 90px;
+				top: -150px;
+				@include breakpoint(medium) {
+					left: 190px;
+					top: -140px;
+				}
+				@include breakpoint(medium-landscape-up) {
+					left: 341px;
+				}
+			}
 
-            &::before {
-                content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-yellow-mountain-shapepray-tell-yellow-mountain-shape.svg");
-                position: absolute;
-                z-index: 9;
-                left: 90px;
-                top: -150px;
-                @include breakpoint(medium) {
-                    left: 190px;
-                    top: -140px;
-                }
-                @include breakpoint(medium-landscape-up) {
-                    left: 341px; 
-                }
-            }
+			.intrinsic {
+				@media only screen and (min-width: 640px) {
+					width: calc(32% - -1%);
+				}
+			}
 
-            .intrinsic {
-                @media only screen and (min-width: 640px) {
-                    width: calc(32% - -1%);
-                }
-            }
-
-            @media only screen and (max-width: 640px) {
-                padding-left: 0;
-
-            }
-        }
-        .intrinsic {
-            padding-top: 6rem;
-            @media only screen and (max-width: 640px) {
-                width: 70vw;
-            }
-        }
-    }
-    .image-block:nth-of-type(4) {
-        .image-block-outer-wrapper {
-            align-items: flex-end;
-            &::before {
-                content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-brown-squigglepray-tell-brown-squiggle.svg");
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                z-index: 9;
-                left: -3px;
-                top: 50%;
-            }
-        }
-    }
-    .image-block:nth-of-type(6)::before {
-        content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-up.svg);
-        position: absolute;
-        bottom: -179px;
-    }
+			@media only screen and (max-width: 640px) {
+				padding-left: 0;
+			}
+		}
+		.intrinsic {
+			padding-top: 6rem;
+			@media only screen and (max-width: 640px) {
+				width: 70vw;
+			}
+		}
+	}
+	.image-block:nth-of-type(4) {
+		.image-block-outer-wrapper {
+			align-items: flex-end;
+			&::before {
+				content: url("https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-brown-squigglepray-tell-brown-squiggle.svg");
+				position: absolute;
+				@include breakpoint(small-only) {
+					z-index: 1;
+					left: -23px;
+					top: 12%;
+				}
+				@include breakpoint(medium-landscape-up) {
+					z-index: 9;
+					left: -3px;
+					top: 50%;
+				}
+			}
+		}
+	}
+	.image-block:nth-of-type(6)::before {
+		content: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-up.svg);
+		position: absolute;
+		bottom: -179px;
+	}
 }
-    // // everything but the first image block
-    // .image-block:not(:nth-of-type(2)) {
+// // everything but the first image block
+// .image-block:not(:nth-of-type(2)) {
 
-    //     // 
-    //     // collage layout
-    //     // 
-    //     .design-layout-collage {
-        
-    //         &.image-position-left {
-    //             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/jess-background-img-1.svg");
-    //             background-position: left center;
-    //             background-repeat: no-repeat;
-    //         }
+//     //
+//     // collage layout
+//     //
+//     .design-layout-collage {
 
-    //         &.image-position-right {
-    //             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/tom-background-1.svg");
-    //             background-repeat: no-repeat;
-    //             background-position: 27% center;
+//         &.image-position-left {
+//             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/jess-background-img-1.svg");
+//             background-position: left center;
+//             background-repeat: no-repeat;
+//         }
 
-    //             @media only screen and (max-width: 640px) {
-    //                 background-size: 82%;
-    //                 background-position: center;
-    //             }
-    //         }
-    //     } // end collage layout
+//         &.image-position-right {
+//             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/tom-background-1.svg");
+//             background-repeat: no-repeat;
+//             background-position: 27% center;
 
-    //     .design-layout-card {
+//             @media only screen and (max-width: 640px) {
+//                 background-size: 82%;
+//                 background-position: center;
+//             }
+//         }
+//     } // end collage layout
 
-    //         &.image-position-left {
-    //             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/tom-background-1.svg");
-    //             background-position: center;
-    //             background-repeat: no-repeat;
-    //         }
+//     .design-layout-card {
 
-    //         &.image-position-right {
-    //             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/jess-background-img-1.svg");
-    //             background-repeat: no-repeat;
-    //             background-position: center;
+//         &.image-position-left {
+//             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/tom-background-1.svg");
+//             background-position: center;
+//             background-repeat: no-repeat;
+//         }
 
-    //             @media only screen and (max-width: 640px) {
-    //                 background-size: 82%;
-    //                 background-position: center;
-    //             }
-    //         }
-    //     }
-    // }
+//         &.image-position-right {
+//             // background-image: url("https://scarlet-trout-cs7a.squarespace.com/s/jess-background-img-1.svg");
+//             background-repeat: no-repeat;
+//             background-position: center;
 
-    // .row {
+//             @media only screen and (max-width: 640px) {
+//                 background-size: 82%;
+//                 background-position: center;
+//             }
+//         }
+//     }
+// }
 
+// .row {
 
-    // }
+// }
 
-    // .row {
-    //     position: relative;
-    //     overflow: visible;
+// .row {
+//     position: relative;
+//     overflow: visible;
 
-    // }
-
+// }
