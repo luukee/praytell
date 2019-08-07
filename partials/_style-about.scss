@@ -143,23 +143,23 @@
 		}
 	}
 	.image-block:nth-of-type(6)::before {
-    content: "";
-    position: absolute;
-    background: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-up.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 60%;
-    height: 113%;
-    top: 41%;
-    right: 0;
-    @include breakpoint(medium) {
-            width: 40%;
-        }
-        @include breakpoint(medium-landscape-up) {
-               left: 0;
-    right: auto;
-        }
+		content: "";
+		position: absolute;
+		background: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-up.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 60%;
+		height: 113%;
+		top: 41%;
+		right: 0;
+		@include breakpoint(medium) {
+			width: 40%;
+		}
+		@include breakpoint(medium-landscape-up) {
+			left: 0;
+			right: auto; 
+		}
 	}
 }
 // // everything but the first image block
