@@ -48,7 +48,7 @@ footer.Footer {
 	background-repeat: no-repeat;
 	background-size: contain;
 
-	.row.sqs-row {
+	.trade-btn {
 		@include breakpoint(small-only) {
 			display: flex;
 			justify-content: space-between;
