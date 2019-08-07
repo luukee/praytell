@@ -123,7 +123,7 @@ body.noscroll {
 #trade,
 #wine-trade {
 	@include breakpoint(medium-portrait-up) {
-			padding: 2rem;
+		padding: 2rem;
 	}
 	&.Index-page,
 	.Index-page-content {
