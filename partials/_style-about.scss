@@ -82,6 +82,11 @@
                 position: absolute;
                 z-index: 9;
                 left: 341px; 
+
+                @include breakpoint(small-only) {
+                        left: 190px;
+    top: -140px;
+                }
             }
 
             .intrinsic {
