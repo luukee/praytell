@@ -51,14 +51,19 @@ footer.Footer {
 	.sqs-layout [class*="sqs-col"] {
 		@include breakpoint(small-only) {
 			float: left !important;
-			width: 100% !important;
-			.code-block .sqs-block-content {
-				@include breakpoint(medium-portrait-up) {
-					display: flex;
-					justify-content: flex-end;
-					margin-right: 20px;
-				}
-			}
+            width: 100% !important;
+            .row.sqs-row {
+    display: flex;
+    align-items: center;
+}
+		}
+	}
+
+	.code-block .sqs-block-content {
+		@include breakpoint(medium-portrait-up) {
+			display: flex;
+			justify-content: flex-end;
+			margin-right: 20px;
 		}
 	}
 
