@@ -13,12 +13,15 @@
         background-position: center;
         padding: 6rem 0;
 
-        &::before {
+        &::after {
             content: "";
             background: url(https://scarlet-trout-cs7a.squarespace.com/s/arrows-down.svg) no-repeat;
-            // position: absolute;
-            // right: 0;
-            // top: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
 
             @media (min-width: 640px) {
 
