@@ -130,24 +130,25 @@
 					background-repeat: no-repeat;
 					background-size: contain;
                     background-position: center;				
-                    
+                        width: 12%;
+    height: 66%;
+    top: 0;
+    z-index: 99;
                 @include breakpoint(small-only) {
-					z-index: 1;
-					left: -23px;
-					top: 12%;
+					// z-index: 1;
+					// left: -23px;
+					// top: 12%;
 				}
 				@include breakpoint(medium) {
-					content: " ";
-
-					width: 11%;
-					height: 66%;
-					top: 53%;
-					z-index: 99; 
+					// width: 11%;
+					// height: 66%;
+					// top: 53%;
+					// z-index: 99; 
 				}
 				@include breakpoint(medium-landscape-up) {
-					z-index: 9;
-					left: -3px;
-					top: 50%;
+					// z-index: 9;
+					// left: -3px;
+					// top: 50%;
 				}
 			}
 		}
