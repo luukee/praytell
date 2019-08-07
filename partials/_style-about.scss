@@ -49,13 +49,17 @@
         
             &.image-position-left {
                 .image-card {
-                    padding-right: 0;
+                    @include breakpoint(medium-landscape-up) {
+                        padding-right: 0;
+                    }
                 }
             }
 
             &.image-position-right {
                 .image-card {
-                    padding-left: 0;
+                    @include breakpoint(medium-landscape-up) {
+                        padding-left: 0;
+                    }
                 }
             }
         }
