@@ -49,6 +49,15 @@ footer.Footer {
     background-repeat: no-repeat;
     background-size: contain;
 
+    .row.sqs-row {
+
+        @include breakpoint(small-only) {
+            display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+}
+
     .Footer-blocks.Footer-blocks--bottom {
         width: 100%;
         > .row {
