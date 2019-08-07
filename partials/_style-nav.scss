@@ -48,11 +48,11 @@ footer.Footer {
 	background-repeat: no-repeat;
 	background-size: contain;
 
-	.trade-btn {
-		@include breakpoint(small-only) {
+	.code-block .sqs-block-content {
+		@include breakpoint(medium-portrait-up) {
 			display: flex;
-			justify-content: space-between;
-			width: 100%;
+			justify-content: flex-end;
+			margin-right: 20px;
 		}
 	}
 
