@@ -8,6 +8,10 @@
             background-size: 190%;
             background-position: -165px 29%;
        }
+       @include breakpoint(medium) {
+               background-size: contain;
+    background-position: 0 61%;
+       }
         @include breakpoint(medium-landscape-up) {
             background-position: 40% 60%;
         }
