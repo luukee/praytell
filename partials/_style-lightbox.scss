@@ -122,7 +122,9 @@ body.noscroll {
 // trade lightbox
 #trade,
 #wine-trade {
-	padding: 2rem;
+	@include breakpoint(medium-portrait-up) {
+			padding: 2rem;
+	}
 	&.Index-page,
 	.Index-page-content {
 		background-color: #fae7d6;
