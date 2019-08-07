@@ -158,7 +158,9 @@
 		}
 		@include breakpoint(medium-landscape-up) {
 			left: 0;
-			right: auto; 
+            right: auto; 
+                width: 37%;
+
 		}
 	}
 }
