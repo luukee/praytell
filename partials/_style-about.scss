@@ -138,9 +138,10 @@
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
-                    width: 15%;
-                    height: 79%;
-                    z-index: 99;
+    width: 11%;
+    height: 66%;
+    top: 53%;
+    z-index: 99;
                 }
 				@include breakpoint(medium-landscape-up) {
 					z-index: 9;
