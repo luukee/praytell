@@ -153,9 +153,13 @@
     height: 113%;
     top: 41%;
     right: 0;
-    @include breakpoint(medium-portrait-up) {
+    @include breakpoint(medium) {
             width: 40%;
+        }
     }
+        @include breakpoint(medium-landscape-up) {
+    left: 0;
+    right: auto;        }
 	}
 }
 // // everything but the first image block
