@@ -158,8 +158,8 @@
 		}
 	}
 	@include breakpoint(small-only) {
-		.sqs-block.spacer-block.sqs-block-spacer {
-			display: none !important;
+		.sqs-layout .sqs-col-12>.sqs-block-spacer {			display: none !important;
+			display: none;
 		}
 	}
 }
