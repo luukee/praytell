@@ -105,15 +105,7 @@
 					position: absolute;
 					z-index: 9;
 					left: 90px;
-					top: -150px;
-					@include breakpoint(medium) {
-						// left: 190px;
-						// top: -140px;
-					}
-					@include breakpoint(medium-landscape-up) {
-						// left: 341px;
-						// top: -7vw;
-					}
+    bottom: 100%;
 				}
 			}
 		}
