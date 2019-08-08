@@ -5,7 +5,7 @@
 		background: url(https://scarlet-trout-cs7a.squarespace.com/s/face-alone.svg) no-repeat;
 		@include breakpoint(small-only) {
 			background-size: 180%;
-			background-position: -165px 29%;
+			background-position: -165px 32%;
 		}
 		@include breakpoint(medium) {
 			background-size: contain;
