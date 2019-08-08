@@ -20,6 +20,9 @@
 		.sqs-col-5 {
 			position: relative;
 
+			.image-block .image-block-wrapper {
+				overflow: visible;
+			}
 			.code-block {
 				position: absolute;
 				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-green-squigglepray-tell-green-squiggle.svg)
