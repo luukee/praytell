@@ -11,9 +11,7 @@
 
 	.row {
 		.sqs-col-3 {
-			@include breakpoint(medium-portrait-up) {
-				background-size: 50%;
-			}
+
 			.more-info {
 				padding: 0 3em;
 				cursor: pointer;
@@ -35,26 +33,25 @@
 
 			&:nth-child(1) {
 				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-gamay-shape.svg) no-repeat center
-                    top;
-                    background-size: 20%;
+					top 20%;
 				.image-block {
 					cursor: pointer;
 				}
 			}
 			&:nth-child(2) {
 				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-2-shape.svg) no-repeat
-					center top;
-                    background-size: 20%;
+					center top 20%;
 			}
 			&:nth-child(3) {
 				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-3-shape.svg) no-repeat
-					center top;
-                    background-size: 20%;
+					center top 20%;
 			}
 			&:nth-child(4) {
 				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-4-shape.svg) no-repeat
-					center top;
-                    background-size: 20%;
+					center top 20%;
+            }
+            			@include breakpoint(medium) {
+				background-size: 50%;
 			}
 		}
 		// not the first column(gamay)
