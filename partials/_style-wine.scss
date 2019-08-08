@@ -1,78 +1,78 @@
 // new squarespace products landing products
 
-
 #wine,
 #wine-purchase {
+	// title
+	.section-title.wine {
+		background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-our-wine-title-backgroundpray-tell-our-wine-title-background.svg)
+			no-repeat;
+		background-position: top;
+	}
 
-    // title
-    .section-title.wine {
-        background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-our-wine-title-backgroundpray-tell-our-wine-title-background.svg) no-repeat;
-        background-position: top;
-    }
+	.row {
+		.sqs-col-3 {
+			.more-info {
+				padding: 0 3em;
+				cursor: pointer;
+			}
+			// image caption
+			.image-block-outer-wrapper {
+				.image-caption {
+					padding: 0 48px;
+					p {
+						text-align: right;
+						margin-top: 20px;
+						font-size: 18px;
+					}
+				}
+				.code-block + .form-block {
+					padding: 12px 0;
+				}
+			}
 
-    .row {
-        .sqs-col-3 {
-            .more-info {
-                padding: 0 3em;
-                cursor: pointer;
-            }
-            // image caption
-            .image-block-outer-wrapper {
-                .image-caption  {
-                    padding: 0 48px;
-                    p {
-                        text-align: right;
-    margin-top: 20px;
-                        font-size: 18px;
-                    }
-                }
-                .code-block + .form-block {
-                        padding: 12px 0;
-                }
-            }
+			&:nth-child(1) {
+				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-gamay-shape.svg) no-repeat center
+					top 20%;
+				.image-block {
+					cursor: pointer;
+				}
+			}
+			&:nth-child(2) {
+				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-2-shape.svg) no-repeat
+					center top 20%;
+			}
+			&:nth-child(3) {
+				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-3-shape.svg) no-repeat
+					center top 20%;
+			}
+			&:nth-child(4) {
+				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-4-shape.svg) no-repeat
+					center top 20%;
+			}
+		}
+		// not the first column(gamay)
+		.sqs-col-3:not(:first-of-type) {
+			.sqs-product-quick-view-button-wrapper {
+				visibility: hidden;
+			}
+			.image-container {
+				a {
+					pointer-events: none;
+				}
+			}
+		}
+	}
 
-            &:nth-child(1) {
-                background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-gamay-shape.svg) no-repeat center top 20%;
-                .image-block {
-                    cursor: pointer;
-                }
-            }
-            &:nth-child(2) {
-                background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-2-shape.svg) no-repeat center top 20%;
-            }
-            &:nth-child(3) {
-                background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-3-shape.svg) no-repeat center top 20%;
-            }
-            &:nth-child(4) {
-                background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-4-shape.svg) no-repeat center top 20%;
-            }
-        }
-        // not the first column(gamay)
-        .sqs-col-3:not(:first-of-type) {
-            .sqs-product-quick-view-button-wrapper {
-                visibility: hidden;
-            }
-            .image-container {
-                a {
-                    pointer-events: none;
-                }
-            }
-        }
-    }
-
-    .productDetails {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
+	.productDetails {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
 }
-
 
 // quick view
 .sqs-product-quick-view-content {
-    & * {
-        font-family: Abel;
-    }
+	& * {
+		font-family: Abel;
+	}
 }
-
