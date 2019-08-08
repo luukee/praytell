@@ -159,7 +159,7 @@
 	}
 	@include breakpoint(small-only) {
 		.sqs-block.spacer-block.sqs-block-spacer {
-			display: none;
+			display: none !important;
 		}
 	}
 }
