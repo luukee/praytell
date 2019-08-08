@@ -63,16 +63,16 @@
 			}
 		}
 		// not the first column(gamay)
-		.sqs-col-3:not(:first-of-type) {
-			.sqs-product-quick-view-button-wrapper {
-				// visibility: hidden;
-			}
-			.image-container {
-				a {
-					pointer-events: none;
-				}
-			}
-		}
+		// .sqs-col-3:not(:first-of-type) {
+		// 	.sqs-product-quick-view-button-wrapper {
+		// 		// visibility: hidden;
+		// 	}
+		// 	.image-container {
+		// 		a {
+		// 			pointer-events: none;
+		// 		}
+		// 	}
+		// }
 	}
 
 	.productDetails {
