@@ -6,6 +6,12 @@
 	background: #fae7d6;
 }
 
+@include breakpoint(small-only) {
+	.sqs-modal-lightbox-content {
+	height: 100vh;
+}
+}
+
 body.noscroll {
 	overflow: hidden;
 }
