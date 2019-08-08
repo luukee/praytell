@@ -11,7 +11,7 @@
 
 	.row {
 		.sqs-col-3 {
-			@include breakpoint(small-only) {
+			@include breakpoint(medium) {
 				background-size: 50%;
 			}
 			.more-info {
