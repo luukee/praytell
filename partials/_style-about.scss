@@ -99,7 +99,9 @@
 					top: -140px;
 				}
 				@include breakpoint(medium-landscape-up) {
-					left: 341px;
+                    left: 341px;
+                        top: -7vw;
+
 				}
 			}
 
