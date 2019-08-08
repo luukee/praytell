@@ -11,7 +11,6 @@
 
 	.row {
 		.sqs-col-3 {
-
 			.more-info {
 				padding: 0 3em;
 				cursor: pointer;
@@ -49,12 +48,12 @@
 			&:nth-child(4) {
 				background: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-wine-4-shape.svg) no-repeat
 					center top 20%;
-            }
-            & > * {
-                            			@include breakpoint(medium) {
-				background-size: 50%;
 			}
-            }
+			& > * {
+				@include breakpoint(medium) {
+					background-size: 50%;
+				}
+			}
 		}
 		// not the first column(gamay)
 		.sqs-col-3:not(:first-of-type) {
