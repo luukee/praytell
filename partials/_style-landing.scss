@@ -39,6 +39,11 @@
 				animation: filter-animation 1.5s;
 				-webkit-animation: filter-animation 1.5s;
 
+				@include breakpoint(medium) {
+					    background-position-y: top,74%;
+
+				}
+
 				&::before {
 					content: url(https://scarlet-trout-cs7a.squarespace.com/s/pray-tell-green-half-circle-sm.svg);
 					position: absolute;
