@@ -11,6 +11,9 @@
 
 	.row {
 		.sqs-col-3 {
+            @include breakpoint(small-only) {
+                    background-size: 50%;
+            }
 			.more-info {
 				padding: 0 3em;
 				cursor: pointer;
