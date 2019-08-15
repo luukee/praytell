@@ -2,7 +2,7 @@
     // not homepage
 if (document.querySelector("body:not(.homepage)")) {
 
-    // wine bottle image
+    // vars
     const winePurchaseBottle = document.querySelector("#wine-purchase .row .sqs-col-3:nth-child(1) .thumb-image");
     const headerElement = document.getElementsByClassName("Header-branding")[0];
     const mobileHeaderElement = document.getElementsByClassName("Mobile-bar-branding")[0];
