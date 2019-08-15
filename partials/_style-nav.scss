@@ -19,7 +19,8 @@ body {
 	&.homepage {
 		.Header-nav.Header-nav--secondary,
 		.Mobile-overlay-nav--secondary,
-		.sqs-template-integrated-shopping-cart {
+		.sqs-template-integrated-shopping-cart,
+		.Header-account.loaded {
 			display: none;
 		}
 	}
